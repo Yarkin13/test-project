@@ -1,0 +1,71 @@
+@import "../../vars.scss";
+
+.ticket__container {
+  background-color: $white-background-color;
+  border-radius: $border-radius;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: $box-shadow;
+}
+
+.ticket__title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket__price {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  color: $font-color-price;
+  margin: 26px 20px;
+}
+
+.ticket__logo {
+  padding: 20px;
+  height: 36px;
+}
+
+.ticket__row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.ticket__row:last-child {
+  padding-bottom: 20px;
+}
+
+.ticket__description {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.ticket__subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: $font-color-subtitle;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  margin: 0 20px;
+}
+
+.ticket__text {
+  font-size: 14px;
+  font-weight: 600;
+  color: $font-color-text;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+  margin: 0 20px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-weight: 600;
+  font-size: 20px;
+  color: $font-color-price;
+}

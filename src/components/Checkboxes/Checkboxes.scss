@@ -1,0 +1,49 @@
+@import "../../vars.scss";
+
+.checkbox__input {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.checkboxes-container__title {
+  font-weight: 600;
+  font-size: 12px;
+  margin: 20px;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  padding-left: 30px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.checkbox__box {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/Checkbox-unchecked.svg);
+  margin-left: -30px;
+}
+
+.checkbox__input:checked + .checkbox__box {
+  background-image: url(../../assets/Checkbox-checked.svg);
+}
+
+.checkboxes-container__list {
+  padding-left: 0;
+  margin: 10px 0;
+}
+
+.checkboxes-container__item {
+  height: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+.checkboxes-container__item:hover {
+  background-color: $checkbox-background-color-hover;
+}
